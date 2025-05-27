@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainy.me</title>
+    <link rel="icon" type="image/png" href="rainy.me/favicon.ico">
+    <link rel="stylesheet" href="rainy.me/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay loop muted playsinline id="bgVideo">
+            <source src="rainy.me/Background.webm" type="video/webm">
+        </video>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"> <i class="fa-solid fa-briefcase"></i> RAINY PORTFOLIO</a>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <a href="#about" class="nav-link" data-en="About" data-es="Sobre mí">About</a>
+                    <a href="#projects" class="nav-link" data-en="Projects" data-es="Proyectos">Projects</a>
+                    <a href="#skills" class="nav-link" data-en="Skills" data-es="Habilidades">Skills</a>
+                    <a href="#contact" class="nav-link" data-en="Contact" data-es="Contacto">Contact</a>
+                    <button class="language-toggle" id="languageToggle" title="Switch Language">
+                        <i class="fas fa-globe"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1 id="heroTitle" data-en="Freelance Backend Developer" data-es="Desarrollador Backend Freelance">Freelance Backend Developer</h1>
+                <p id="heroDesc" data-en="Information technology, automation & software development" data-es="Tecnología de la información, automatización y desarrollo de software">Information technology, automation & software development</p>
+                <a href="#contact" class="btn" id="heroBtn" data-en="Get in Touch" data-es="Contáctame">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2 id="aboutTitle" data-en="About Me" data-es="Sobre Mí">About Me</h2>
+            </div>
+            <div class="info-container">
+                <div class="info-card fade-in delay-1">
+                    <i class="fas fa-user"></i>
+                    <h3 id="whoTitle" data-en="Who I Am" data-es="Quién Soy">Who I Am</h3>
+                    <p id="whoDesc" data-en="I'm a passionate backend developer with a focus on process automation, custom system design, and software architecture. Specialized in VBA, Python, and Java, with hands-on experience in building sales systems, inventory management solutions, and RESTful APIs." data-es="Soy un desarrollador backend apasionado con enfoque en automatización de procesos, diseño de sistemas personalizados y arquitectura de software. Especializado en VBA, Python y Java, con experiencia práctica en la construcción de sistemas de ventas, soluciones de gestión de inventario y APIs RESTful.">I'm a passionate backend developer with a focus on process automation, custom system design, and software architecture. Specialized in VBA, Python, and Java, with hands-on experience in building sales systems, inventory management solutions, and RESTful APIs.</p>
+                </div>
+                <div class="info-card fade-in delay-2">
+                    <i class="fas fa-code"></i>
+                    <h3 id="whatTitle" data-en="What I Do" data-es="Qué Hago">What I Do</h3>
+                    <p id="whatDesc" data-en="My goal is to join projects where I can apply my knowledge of automation, clean architecture, and object-oriented programming, contributing to operational efficiency, system scalability, and strategic decision-making through well-structured and high-impact technological solutions!" data-es="Mi objetivo es unirme a proyectos donde pueda aplicar mis conocimientos de automatización, arquitectura limpia y programación orientada a objetos, contribuyendo a la eficiencia operativa, la escalabilidad del sistema y la toma de decisiones estratégicas a través de soluciones tecnológicas bien estructuradas y de alto impacto.">My goal is to join projects where I can apply my knowledge of automation, clean architecture, and object-oriented programming, contributing to operational efficiency, system scalability, and strategic decision-making through well-structured and high-impact technological solutions!</p>
+                </div>
+                <div class="info-card fade-in delay-3">
+                    <i class="fas fa-rocket"></i>
+                    <h3 id="whyTitle" data-en="Why Work With Me" data-es="Por Qué Trabajar Conmigo">Why Work With Me</h3>
+                    <p id="whyDesc" data-en="I bring a combination of technical expertise, problem-solving abilities, and communication skills to every project. I'm committed to continuous learning and staying updated with the latest technologies and best practices in backend development." data-es="Aporto una combinación de experiencia técnica, capacidad para resolver problemas y habilidades de comunicación a cada proyecto. Estoy comprometido con el aprendizaje continuo y mantenerme actualizado con las últimas tecnologías y mejores prácticas en desarrollo backend.">I bring a combination of technical expertise, problem-solving abilities, and communication skills to every project. I'm committed to continuous learning and staying updated with the latest technologies and best practices in backend development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2 id="projectsTitle" data-en="My Projects" data-es="Mis Proyectos">My Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in delay-1">
+                    <div class="project-img">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 id="project1Title" data-en="SyncTube API" data-es="API de SyncTube">SyncTube API</h3>
+                        <p id="project1Desc" data-en="Development of a lightweight REST API for real-time multimedia content synchronization, aimed at collaborative interaction between users. Features include input validation, music persistence & download, and data control via JSON." data-es="Desarrollo de una API REST ligera para la sincronización de contenido multimedia en tiempo real, dirigida a la interacción colaborativa entre usuarios. Las características incluyen validación de entrada, persistencia y descarga de música, y control de datos a través de JSON.">Development of a lightweight REST API for real-time multimedia content synchronization, aimed at collaborative interaction between users. Features include input validation, music persistence & download, and data control via JSON.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">JSON</span>
+                            <span class="project-tag">FastAPI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/RegreDanger/Synctube-api"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in delay-2">
+                    <div class="project-img">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 id="project2Title" data-en="POS System in Java (Work in Progress)" data-es="Sistema POS en Java (En Progreso)">POS System in Java (Work in Progress)</h3>
+                        <p id="project2Desc" data-en="Modular system design using DDD, Clean Architecture, and JavaFX. Implements local persistence with SQLite and design patterns such as Repository, Factory, Observer, and others." data-es="Diseño de sistema modular utilizando DDD, Arquitectura Limpia y JavaFX. Implementa persistencia local con SQLite y patrones de diseño como Repositorio, Fábrica, Observador y otros.">Modular system design using DDD, Clean Architecture, and JavaFX. Implements local persistence with SQLite and design patterns such as Repository, Factory, Observer, and others.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in delay-3">
+                    <div class="project-img">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3 id="project3Title" data-en="JavaCodeBox" data-es="JavaCodeBox">JavaCodeBox</h3>
+                        <p id="project3Desc" data-en="Utility package for automation and parallel processing in Java. Includes experimentation with concurrency, aspect-oriented programming (AOP), and structural design patterns." data-es="Paquete de utilidades para automatización y procesamiento paralelo en Java. Incluye experimentación con concurrencia, programación orientada a aspectos (AOP) y patrones de diseño estructurales.">Utility package for automation and parallel processing in Java. Includes experimentation with concurrency, aspect-oriented programming (AOP), and structural design patterns.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/RegreDanger/JavaCodeBox"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2 id="skillsTitle" data-en="Knowledge & Experience" data-es="Conocimientos y Experiencia">Knowledge & Experience</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category fade-in delay-1">
+                    <h3 id="techSkillsTitle" data-en="Technical Skills" data-es="Habilidades Técnicas">Technical Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>Java</h4>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>Python</h4>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-bar" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>Kotlin</h4>
+                            <span>20%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-bar" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>MySQL</h4>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h4>Git</h4>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                   <p data-en="Programming Languages: Java (OOP, Concurrency, AOP), Python, VBA, Kotlin (basic)" data-es="Lenguajes de Programación: Java (POO, Concurrencia, AOP), Python, VBA, Kotlin (básico)">Programming Languages: Java (OOP, Concurrency, AOP), Python, VBA, Kotlin (basic)</p><br>
+                   <p data-en="Databases: MySQL/PostgreSQL, SQLite, Microsoft Access" data-es="Bases de Datos: MySQL/PostgreSQL, SQLite, Microsoft Access">Databases: MySQL/PostgreSQL, SQLite, Microsoft Access</p><br>
+                   <p data-en="Frameworks / Technologies: JavaFX, Swing, FastAPI, Java EE, Spring Boot, Javalin" data-es="Frameworks / Tecnologías: JavaFX, Swing, FastAPI, Java EE, Spring Boot, Javalin">Frameworks / Technologies: JavaFX, Swing, FastAPI, Java EE, Spring Boot, Javalin</p><br>
+                   <p data-en="Software Architecture: Clean Architecture, DDD, Hexagonal Architecture, MVC" data-es="Arquitectura de Software: Arquitectura Limpia, DDD, Arquitectura Hexagonal, MVC">Software Architecture: Clean Architecture, DDD, Hexagonal Architecture, MVC</p><br>
+                   <p data-en="Version Control & Tools: Git, GitHub (dependency management with Maven)" data-es="Control de Versiones y Herramientas: Git, GitHub (gestión de dependencias con Maven)">Version Control & Tools: Git, GitHub (dependency management with Maven)</p><br>
+                   <p data-en="Automation & Office Integration: Macros, Office Scripting, Excel Dashboards" data-es="Automatización e Integración de Office: Macros, Scripting de Office, Tableros de Excel">Automation & Office Integration: Macros, Office Scripting, Excel Dashboards</p><br>
+                   <p data-en="System Design: POS systems, inventory management, medical appointment systems, REST APIs" data-es="Diseño de Sistemas: sistemas POS, gestión de inventario, sistemas de citas médicas, APIs REST">System Design: POS systems, inventory management, medical appointment systems, REST APIs</p><br>
+               <p data-en="Languages: Native Spanish and intermediate English (B2)" data-es="Idiomas: Español nativo e inglés intermedio B2">Languages: Native Spanish and intermediate English (B2)</p>
+
+                </div>
+                <div class="skills-category fade-in delay-2">
+                    <h3 id="workExpTitle" data-en="Technical Training & Acquired Skills" data-es="Formación Técnica y Habilidades Adquiridas">Technical Training & Acquired Skills</h3>
+                    <div class="experience-item" id="exp1">
+                        <h4 data-en="Backend Development & Software Architecture" data-es="Desarrollo Backend y Arquitectura de Software">Backend Development & Software Architecture</h4>
+                        <h5 data-en="About" data-es="Acerca de">About</h5>
+                        <p data-en="Solid foundations in OOP, DDD, MVC, Clean Architecture, and Hexagonal Architecture. Design of scalable systems (POS, REST APIs, utilities). Proficient with design patterns: Factory, Observer, Singleton, Strategy, and others." data-es="Bases sólidas en POO, DDD, MVC, Arquitectura Limpia y Arquitectura Hexagonal. Diseño de sistemas escalables (POS, APIs REST, utilidades). Competente con patrones de diseño: Fábrica, Observador, Singleton, Estrategia y otros.">Solid foundations in OOP, DDD, MVC, Clean Architecture, and Hexagonal Architecture. Design of scalable systems (POS, REST APIs, utilities). Proficient with design patterns: Factory, Observer, Singleton, Strategy, and others.</p>
+                    </div>
+                    <div class="experience-item" id="exp2">
+                        <h4 data-en="Java & Kotlin" data-es="Java y Kotlin">Java & Kotlin</h4>
+                        <h5 data-en="About" data-es="Acerca de">About</h5>
+                        <p data-en="Development with Java SE, Swing, and JavaFX for GUI applications. Experience with concurrency, AOP, synchronized collections, and multithreading. Introductory knowledge of Kotlin and functional programming concepts. API development using Javalin/Spring Boot for POS systems (in progress)." data-es="Desarrollo con Java SE, Swing y JavaFX para aplicaciones GUI. Experiencia con concurrencia, AOP, colecciones sincronizadas y multihilo. Conocimiento introductorio de Kotlin y conceptos de programación funcional. Desarrollo de API utilizando Javalin/Spring Boot para sistemas POS (en progreso).">Development with Java SE, Swing, and JavaFX for GUI applications. Experience with concurrency, AOP, synchronized collections, and multithreading. Introductory knowledge of Kotlin and functional programming concepts. API development using Javalin/Spring Boot for POS systems (in progress).</p>
+                    </div>
+                    <div class="experience-item" id="exp3">
+                        <h4 data-en="Python and Task Automation" data-es="Python y Automatización de Tareas">Python and Task Automation</h4>
+                        <h5 data-en="About" data-es="Acerca de">About</h5>
+                        <p data-en="Automation of administrative tasks using Python and VBA. File handling, data structures, exception control, and web scraping. API development with FastAPI and JSON data manipulation." data-es="Automatización de tareas administrativas utilizando Python y VBA. Manejo de archivos, estructuras de datos, control de excepciones y web scraping. Desarrollo de API con FastAPI y manipulación de datos JSON.">Automation of administrative tasks using Python and VBA. File handling, data structures, exception control, and web scraping. API development with FastAPI and JSON data manipulation.</p>
+                    </div>
+                    <div class="experience-item" id="exp4">
+                        <h4 data-en="Databases & SQL" data-es="Bases de Datos y SQL">Databases & SQL</h4>
+                        <h5 data-en="About" data-es="Acerca de">About</h5>
+                        <p data-en="Database design and SQL queries using MySQL/PostgreSQL, SQLite, and MS Access. Advanced query filtering, relational modeling, report generation, and custom data exports." data-es="Diseño de bases de datos y consultas SQL utilizando MySQL/PostgreSQL, SQLite y MS Access. Filtrado avanzado de consultas, modelado relacional, generación de informes y exportaciones de datos personalizadas.">Database design and SQL queries using MySQL/PostgreSQL, SQLite, and MS Access. Advanced query filtering, relational modeling, report generation, and custom data exports.</p>
+                    </div>
+                </div>
+                <div class="skills-category fade-in delay-3">
+                    <h3 id="eduTitle" data-en="Education" data-es="Educación">Education</h3>
+                    <div class="experience-item" id="edu1">
+                        <h4 data-en="Freelancer – Process Automation and Systems Management" data-es="Freelancer – Automatización de Procesos y Gestión de Sistemas">Freelancer – Process Automation and Systems Management</h4>
+                        <h5 data-en="November 2023 – Present" data-es="Noviembre 2023 – Presente">November 2023 – Present</h5>
+                        <p data-en="Automated administrative workflows using VBA and Python. Developed sales, purchasing, and inventory systems for small and medium-sized businesses. Built interactive dashboards, advanced forms, and custom macros in Excel. Acted as an external consultant on Java EE and REST API projects. Provided technical support and guidance to clients for optimizing and maintaining their systems." data-es="Automatización de flujos de trabajo administrativos utilizando VBA y Python. Desarrollo de sistemas de ventas, compras e inventario para pequeñas y medianas empresas. Construcción de tableros interactivos, formularios avanzados y macros personalizadas en Excel. Actuación como consultor externo en proyectos de Java EE y API REST. Provisión de soporte técnico y orientación a clientes para optimizar y mantener sus sistemas.">Automated administrative workflows using VBA and Python. Developed sales, purchasing, and inventory systems for small and medium-sized businesses. Built interactive dashboards, advanced forms, and custom macros in Excel. Acted as an external consultant on Java EE and REST API projects. Provided technical support and guidance to clients for optimizing and maintaining their systems.</p>
+                    </div>
+                    <div class="experience-item" id="cert1">
+                        <h4 data-en="Professional Excel (University Technical Degree – Ongoing)" data-es="Excel Profesional (Título Técnico Universitario – En curso)">Professional Excel (University Technical Degree – Ongoing)</h4>
+                        <h5 data-en="About" data-es="Acerca de">About</h5>
+                        <p data-en="Creation of interactive dashboards, custom macros, and advanced forms. Automation of repetitive tasks in inventory and sales systems. Integration of Excel with databases and advanced data analysis techniques!" data-es="Creación de tableros interactivos, macros personalizadas y formularios avanzados. Automatización de tareas repetitivas en sistemas de inventario y ventas. Integración de Excel con bases de datos y técnicas avanzadas de análisis de datos.">Creation of interactive dashboards, custom macros, and advanced forms. Automation of repetitive tasks in inventory and sales systems. Integration of Excel with databases and advanced data analysis techniques!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2 id="contactTitle" data-en="Get In Touch" data-es="Contacto">Get In Touch</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info fade-in delay-1">
+                    <h3 id="contactInfoTitle" data-en="Contact Information" data-es="Información de Contacto">Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>carlosemiliogranadaperez@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+52 55 8172 7493</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p id="contactLocation" data-en="MEXICO" data-es="MÉXICO">MEXICO</p>
+                    </div>
+                    <div class="social-links">
+                        <h4 id="socialTitle" data-en="Connect With Me" data-es="Conéctate Conmigo">Connect With Me</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/RegreDanger"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p id="footerText" data-en="© 2025 Rainy Portfolio. All rights reserved." data-es="© 2025 Rainy Portfolio. Todos los derechos reservados.">© 2025 Rainy Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+        <!-- Tour Button -->
+    <button id="startTour" class="tour-start-button">
+     Start Tour
+    </button>
+<script src="rainy.me/main.js"></script>
+<script src="rainy.me/tour.js"></script>
+</body>
+</html>
