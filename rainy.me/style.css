@@ -989,7 +989,7 @@ body ::selection {
     animation: pulse 2s infinite;
 }
 
-/* Ensure the tour popover stays within viewport */
+
 .tour-popover-container {
     position: fixed;
     top: 0;
